@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @provider.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @provider.address %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @provider.description %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @provider.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @provider.longitude %>
+</p>
+
+<p><h3><%= link_to "Show Comments", "#", id: "comments-link" %></h3>
+</p>
+
+<section id="comments-section">
+
+<section id="comments">
+<%= render partial: 'providers/comment', collection: @provider.comments %>
+</section>
+
+<%= render partial: 'comments/form' %>
+</section>
+
+<%= link_to 'Edit', edit_provider_path(@provider) %> |
+<%= link_to 'Back', providers_path %>

@@ -7,22 +7,30 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
+gem 'high_voltage', '~> 2.4.0'
+gem 'geocoder'
+gem 'gmaps4rails'
+
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
+
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'thin'
+
 group :development do
   gem 'better_errors'
   gem 'quiet_assets'
   gem 'rails_layout'
 end
+
 group :development, :test do
   gem 'sqlite3'
 end
+
 group :production do
   gem 'pg'
   gem 'rails_12factor'

@@ -1,0 +1,38 @@
+<!-- ********** SIDE IMAGE - SECTION ********** -->
+  <section id="about"></section>
+  <section class="side-image text-heavy clearfix">
+    <div class="image-container col-md-5 col-sm-3 pull-left">
+      <div class="background-image-holder">
+        <%= image_tag("aboutaidin.png") %>
+      </div><!--/background-img-holder-->
+    </div><!--/img-container-->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4 content clearfix">
+          <h1>About Aidin and This App</h1>
+
+          <p class="lead">Aidin empowers hospital leaders, patients, and post acute providers with real-time quality and satisfaction data to make informed decisions.</p>
+
+          <p class="lead">This app allows users to log in and log out. Visitors can view empowering information about post-acute providers and leave comments about said providers by clicking "View Providers" on the home page. The providers can be added, updated, or deleted ("able to create, edit, delete records").</p>
+
+          <p class="lead">There will be a list of providers whose locations are shown on a Google map ("geocoder API use"). If a visitor clicks on "show," he or she will see information about that provider. A provider has many comments ("include relational objects"). A visitor may click on the "Comments" link to toggle comments about the provider ("AJAX request").</p>
+
+          <p class="lead">If a visitor adds a new provider with an address (e.g., Paris, France or Baltimore, USA), the provider's location will show up on a Google map below the list of all providers.</p>
+
+          <p class="lead">Finally, the navigation bar and comments use partials ("uses partials").</p>
+
+          <%= link_to 'Go Back', root_path, :class=>"btn btn-conf btn-green" %> <br>
+          <div class="col-sm-6 no-pad-left feature">
+            <h5>Process</h5>
+            <p>Aidin’s reimagined referral process benefits both hospitals and post acute care providers. Increase the visibility of referrals for post-acute care providers.</p>
+          </div>
+          <div class="col-sm-6 no-pad-left feature">
+            <h5>Strategy</h5>
+            <p>Maximize your risk based reimbursement by engaging the right post acute care provider for your patient population.</p>
+          </div>
+        </div><!--col-md-6 col-sm-8 -->
+
+      </div><!-- /row -->
+    </div><!--/container -->
+  </section><!--Side Image Section -->

@@ -1,2 +1,13 @@
-<h3>Welcome</h3>
-<p><%= link_to 'Users:', users_path %> <%= User.count %> registered</p>
+<!-- ********** HEADER ********** -->
+  <section id="home"></section>
+  <div id="h">
+      <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>Find and rate the best post-acute care providers in your area.</h1>
+            <%= link_to('About This App', page_path('about'), class: "btn btn-conf btn-green") %>
+            <%= link_to('View Providers', providers_path, class: "btn btn-conf btn-green") %>
+        </div>
+      </div>
+      </div><!-- /.container -->
+  </div><!--/H -->
