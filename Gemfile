@@ -10,6 +10,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'high_voltage', '~> 2.4.0'
 gem 'geocoder'
 gem 'gmaps4rails'
+gem 'pg'
 
 group :development, :test do
   gem 'byebug'
@@ -27,11 +28,6 @@ group :development do
   gem 'rails_layout'
 end
 
-group :development, :test do
-  gem 'sqlite3'
-end
-
 group :production do
-  gem 'pg'
   gem 'rails_12factor'
 end
